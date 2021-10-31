@@ -18,6 +18,10 @@ See [Changelog](CHANGELOG.md).
 
 ## Related Plugins
 
+- [Collapse All](https://github.com/OfficerHalf/obsidian-collapse-all)
+  - This plugin collapses and expands the file explorer
+  - It is compatible with this plugin: both can be installed, and are useful alongside each other, as shown in this image:  
+  ![collapse-all-and-reveal-active](docs/collapse-all-and-reveal-active.png)
 - [Automatically Reveal Active File](https://github.com/shichongrui/obsidian-reveal-active-file)
   - Use this if you always want the navigator to show the active file
   - And you don't mind Obsidian jumping away from other views, like Search results or the Tags panel
