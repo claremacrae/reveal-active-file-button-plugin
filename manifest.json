@@ -1,6 +1,6 @@
 {
   "id": "reveal-active-file-button",
-  "name": "Manually Reveal Active File",
+  "name": "Reveal Active File Button",
   "version": "1.0.0",
   "minAppVersion": "0.12.11",
   "description": "Add a button to the top of the File Explorer, to reveal the active file.",

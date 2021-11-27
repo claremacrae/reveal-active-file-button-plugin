@@ -1,4 +1,4 @@
-## Manually Reveal Active File Obsidian Plugin
+## Reveal Active File Button Obsidian Plugin
 
 Use a single click to make the [Obsidian.md](https://obsidian.md) File Explorer/Navigator show your active file, for example to find neighbouring files.
 
