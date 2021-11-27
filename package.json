@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-manually-reveal-active-file",
+  "name": "reveal-active-file-button",
   "version": "1.0.0",
   "description": "Add a button to the top of the File Explorer, to reveal the active file.",
   "main": "main.js",

@@ -1,5 +1,5 @@
 {
-  "id": "obsidian-manually-reveal-active-file",
+  "id": "reveal-active-file-button",
   "name": "Manually Reveal Active File",
   "version": "1.0.0",
   "minAppVersion": "0.12.11",
