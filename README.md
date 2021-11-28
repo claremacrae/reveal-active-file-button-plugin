@@ -10,6 +10,11 @@
 
 Use a single click to make the [Obsidian.md](https://obsidian.md) File Explorer/Navigator show your active file, for example to find neighbouring files.
 
+This is a convenient addition to these built-in options already included in Obsidian:
+
+- The command "File explorer: Reveal active file in navigation"
+- The pane menu option "Reveal file in navigation"
+
 ## Usage
 
 To scroll Obsidian File Explorer/Navigator show your active file, click on the crosshairs icon:
