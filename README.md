@@ -25,11 +25,11 @@ This is a convenient addition to these built-in options already included in Obsi
 
 To scroll Obsidian File Explorer/Navigator show your active file, click on the crosshairs icon:
 
-![RevealActiveFile](docs/reveal-active-file-icon.png)
+![RevealActiveFile](docs/images/reveal-active-file-icon.png)
 
 The result:
 
-![ActiveFileRevealed](docs/active-file-highlighted.png)
+![ActiveFileRevealed](docs/images/active-file-highlighted.png)
 
 ## Tips
 
@@ -55,7 +55,7 @@ See [Changelog](CHANGELOG.md).
 - [Collapse All](https://github.com/OfficerHalf/obsidian-collapse-all)
   - This plugin collapses and expands the file explorer
   - It is compatible with this plugin: both can be installed, and are useful alongside each other, as shown in this image:  
-  ![collapse-all-and-reveal-active](docs/collapse-all-and-reveal-active.png)
+  ![collapse-all-and-reveal-active](docs/images/collapse-all-and-reveal-active.png)
 - [Automatically Reveal Active File](https://github.com/shichongrui/obsidian-reveal-active-file)
   - Use this if you always want the navigator to show the active file
   - And you don't mind Obsidian jumping away from other views, like Search results or the Tags panel
