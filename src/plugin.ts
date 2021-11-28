@@ -1,5 +1,5 @@
 import { Plugin, WorkspaceLeaf} from 'obsidian';
-import { MANUALLY_REVEAL_ACTIVE_FILE_ICON } from './constants';
+import { REVEAL_ACTIVE_FILE_BUTTON_ICON } from './constants';
 
 export class ManuallyRevealActiveFilePlugin extends Plugin {
   async onload(): Promise<void> {
@@ -80,7 +80,7 @@ export class ManuallyRevealActiveFilePlugin extends Plugin {
   private setButtonProperties(
       button: HTMLElement
   ): void {
-    button.innerHTML = MANUALLY_REVEAL_ACTIVE_FILE_ICON;
+    button.innerHTML = REVEAL_ACTIVE_FILE_BUTTON_ICON;
     button.setAttribute(
         'aria-label',
         'Reveal active file'
