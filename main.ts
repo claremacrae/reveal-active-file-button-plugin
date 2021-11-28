@@ -1,3 +1,3 @@
-import { ManuallyRevealActiveFilePlugin } from './src/plugin';
+import { RevealActiveFileButtonPlugin } from './src/plugin';
 
-export default ManuallyRevealActiveFilePlugin;
+export default RevealActiveFileButtonPlugin;
