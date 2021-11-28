@@ -3,6 +3,7 @@
 <!-- toc -->
 ## Contents
 
+  * [Purpose](#purpose)
   * [Usage](#usage)
   * [Changelog](#changelog)
   * [Related Plugins](#related-plugins)
