@@ -1,0 +1,12 @@
+{
+  "ReadOnly": false,
+  "TocLevel": 5,
+  "Exclude": [],
+  "UrlsAsSnippets": [],
+  "TocExcludes": [
+    "Exclude Heading1",
+    "Exclude Heading2"
+  ],
+  "WriteHeader": false,
+  "Convention": "InPlaceOverwrite"
+}

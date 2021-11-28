@@ -1,5 +1,13 @@
 ## "Reveal Active File Button" Obsidian Plugin
 
+<!-- toc -->
+## Contents
+
+  * [Usage](#usage)
+  * [Changelog](#changelog)
+  * [Related Plugins](#related-plugins)
+  * [Thanks](#thanks)<!-- endToc -->
+
 Use a single click to make the [Obsidian.md](https://obsidian.md) File Explorer/Navigator show your active file, for example to find neighbouring files.
 
 ## Usage
