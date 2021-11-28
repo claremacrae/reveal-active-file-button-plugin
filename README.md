@@ -5,6 +5,7 @@
 
   * [Purpose](#purpose)
   * [Usage](#usage)
+    * [Tips](#tips)
   * [Changelog](#changelog)
   * [Related Plugins](#related-plugins)
   * [Thanks](#thanks)<!-- endToc -->
@@ -27,6 +28,13 @@ To scroll Obsidian File Explorer/Navigator show your active file, click on the c
 The result:
 
 ![ActiveFileRevealed](docs/active-file-highlighted.png)
+
+### Tips
+
+- If the File Explorer/Navigator does not quite scroll to the correct position, click the button a second time and it will work.
+  - Explanation: the button simply invokes the built-in Obsidian command "File explorer: Reveal active file in navigation".
+  - In large vaults, or for a file in a folder with a large number of files, the command does not always move to the correct position the first time.
+  - A second request appears to work reliably. 
 
 ## Changelog
 
