@@ -8,7 +8,9 @@
   * [Related Plugins](#related-plugins)
   * [Thanks](#thanks)<!-- endToc -->
 
-Use a single click to make the [Obsidian.md](https://obsidian.md) File Explorer/Navigator show your active file, for example to find neighbouring files.
+## Purpose
+
+**Reveal Active File Button** is an Obsidian plugin that adds a single-click button to **make the [Obsidian.md](https://obsidian.md) File Explorer/Navigator show your active file**, for example to find neighbouring files.
 
 This is a convenient addition to these built-in options already included in Obsidian:
 
