@@ -1,3 +1,7 @@
+# 2.0.1
+
+* Bug fix: Updated manifest.json and versions.json
+
 # 2.0.0
 
 Plugin renamed to **Reveal Active File Button**.
