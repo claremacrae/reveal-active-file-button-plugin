@@ -50,7 +50,7 @@ export class RevealActiveFileButtonPlugin extends Plugin {
 
     const newIcon = document.createElement('div');
     this.setButtonProperties(newIcon);
-    newIcon.className = 'nav-action-button reveal-active-file-button';
+    newIcon.className = 'clickable-icon nav-action-button reveal-active-file-button';
     this.registerDomEvent(newIcon, 'click', () => {
       this.onButtonClick(explorer);
     });
