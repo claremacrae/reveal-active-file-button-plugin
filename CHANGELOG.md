@@ -1,3 +1,7 @@
+# 2.0.2
+
+* Bug fix: Restore alignment of Reveal button in Obsidian v0.16.* ([#1](https://github.com/claremacrae/reveal-active-file-button-plugin/pull/1), thanks @OfficerHalf)
+
 # 2.0.1
 
 * Bug fix: Updated manifest.json and versions.json
