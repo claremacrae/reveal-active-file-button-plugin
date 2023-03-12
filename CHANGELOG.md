@@ -1,3 +1,7 @@
+# 2.0.3
+
+* Bug fix: Fix issue where Reveal button requires two clicks ([#3](https://github.com/claremacrae/reveal-active-file-button-plugin/pull/3), thanks @alangrainger)
+
 # 2.0.2
 
 * Bug fix: Restore alignment of Reveal button in Obsidian v0.16.* ([#1](https://github.com/claremacrae/reveal-active-file-button-plugin/pull/1), thanks @OfficerHalf)
