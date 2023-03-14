@@ -1,5 +1,5 @@
-import { Plugin, WorkspaceLeaf } from "obsidian";
-import { REVEAL_ACTIVE_FILE_BUTTON_ICON } from "./constants";
+import { Plugin, WorkspaceLeaf } from 'obsidian';
+import { REVEAL_ACTIVE_FILE_BUTTON_ICON } from './constants';
 
 export default class RevealActiveFileButtonPlugin extends Plugin {
 	async onload() {
@@ -10,7 +10,7 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 		});
 		// File explorers that get opened later on
 		this.registerEvent(
-			this.app.workspace.on("layout-change", () => {
+			this.app.workspace.on('layout-change', () => {
 				const explorer = this.getFileExplorers();
 				this.addRevealButton(explorer);
 			})
@@ -25,7 +25,7 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 	private addRevealButton(explorer: WorkspaceLeaf): void {
 		const container = explorer.view.containerEl;
 		const navContainer = container.querySelector(
-			"div.nav-buttons-container"
+			'div.nav-buttons-container'
 		) as HTMLDivElement;
 
 		const existingButton = this.getRevealButton(explorer);
@@ -34,15 +34,16 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 		}
 
 		const newIcon = navContainer.createEl(
-			"button",
+			'button',
 			{
-				cls: "clickable-icon nav-action-button reveal-active-file-button",
+				attr: { 'aria-label': 'Reveal active file' },
+				cls: 'clickable-icon nav-action-button reveal-active-file-button'
 			},
 			(el) => {
 				el.innerHTML = REVEAL_ACTIVE_FILE_BUTTON_ICON;
 			}
 		);
-		this.registerDomEvent(newIcon, "click", () => {
+		this.registerDomEvent(newIcon, 'click', () => {
 			this.onButtonClick(explorer);
 		});
 	}
@@ -64,13 +65,13 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 		if (explorer) {
 			// @ts-ignore
 			this.app.commands.executeCommandById(
-				"file-explorer:reveal-active-file"
+				'file-explorer:reveal-active-file'
 			);
 			// Send the command twice like a double-click, to handle the frequent case where Obsidian fails to jump to the file
 			setTimeout(() => {
 				// @ts-ignore
 				this.app.commands.executeCommandById(
-					"file-explorer:reveal-active-file"
+					'file-explorer:reveal-active-file'
 				);
 			}, 50);
 		}
@@ -80,7 +81,7 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 	 * Returns all loaded file explorer leaf
 	 */
 	private getFileExplorers(): WorkspaceLeaf {
-		return this.app.workspace.getLeavesOfType("file-explorer")[0];
+		return this.app.workspace.getLeavesOfType('file-explorer')[0];
 	}
 
 	/**
@@ -88,8 +89,7 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 	 */
 	private getRevealButton(explorer: WorkspaceLeaf): HTMLDivElement | null {
 		return explorer.view.containerEl.querySelector(
-			".reveal-active-file-button"
+			'.reveal-active-file-button'
 		);
 	}
 }
-

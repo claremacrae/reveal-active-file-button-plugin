@@ -1,12 +1,12 @@
 {
 	"name": "reveal-active-file-button",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"description": "Add a button to the top of the File Explorer, to reveal the active file.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-		"version": "2.1.0"
+		"version": "2.1.1"
 	},
 	"keywords": [],
 	"author": "Clare Macrae",
