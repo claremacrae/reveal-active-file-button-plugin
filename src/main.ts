@@ -43,7 +43,7 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 				el.innerHTML = REVEAL_ACTIVE_FILE_BUTTON_ICON;
 			}
 		);
-		this.registerDomEvent(newIcon, 'click', () => {
+		this.registerDomEvent(newIcon, 'click', async () => {
 			this.onButtonClick(explorer);
 		});
 	}
@@ -61,19 +61,12 @@ export default class RevealActiveFileButtonPlugin extends Plugin {
 	/**
 	 * Reveal the active file in the given file explorer
 	 */
-	private onButtonClick(explorer: WorkspaceLeaf): void {
+	private onButtonClick = (explorer: WorkspaceLeaf) => {
 		if (explorer) {
 			// @ts-ignore
-			this.app.commands.executeCommandById(
+			await this.app.commands.executeCommandById(
 				'file-explorer:reveal-active-file'
 			);
-			// Send the command twice like a double-click, to handle the frequent case where Obsidian fails to jump to the file
-			setTimeout(() => {
-				// @ts-ignore
-				this.app.commands.executeCommandById(
-					'file-explorer:reveal-active-file'
-				);
-			}, 50);
 		}
 	}
 
