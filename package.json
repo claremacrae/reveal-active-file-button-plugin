@@ -1,23 +1,24 @@
 {
-  "name": "reveal-active-file-button",
-  "version": "1.0.0",
-  "description": "Add a button to the top of the File Explorer, to reveal the active file.",
-  "main": "main.js",
-  "scripts": {
-    "dev": "rollup --config rollup.config.js -w",
-    "build": "rollup --config rollup.config.js --environment BUILD:production"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^18.0.0",
-    "@rollup/plugin-node-resolve": "^11.2.1",
-    "@rollup/plugin-typescript": "^8.2.1",
-    "@types/node": "^14.14.37",
-    "obsidian": "^0.12.11",
-    "rollup": "^2.32.1",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
-  }
+	"name": "reveal-active-file-button",
+	"version": "2.1.0",
+	"description": "Add a button to the top of the File Explorer, to reveal the active file.",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"version": "2.1.0"
+	},
+	"keywords": [],
+	"author": "Clare Macrae",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^16.11.6",
+		"@typescript-eslint/eslint-plugin": "5.29.0",
+		"@typescript-eslint/parser": "5.29.0",
+		"builtin-modules": "3.3.0",
+		"esbuild": "0.17.3",
+		"obsidian": "latest",
+		"tslib": "2.4.0",
+		"typescript": "4.7.4"
+	}
 }
