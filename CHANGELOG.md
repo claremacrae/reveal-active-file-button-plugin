@@ -1,3 +1,15 @@
+# 2.0.4
+
+There are no user-visible changes in behaviour: this is entirely a code-quality release, to satisfy current Obsidian coding standards.
+
+* Increase minimum supported Obsidian version from 0.12.11 to 0.15.9. This was required to ensure correct behaviour if there are popup windows open.
+* Fix: Remove Unsafe assignment (of static icon value) to innerHTML.
+* Chore: Fully pass all the Obsidian ESLint code quality checks.
+* Chore: Add [Verify Commit](https://github.com/claremacrae/reveal-active-file-button-plugin/actions/workflows/verify.yml) GitHub action, to check pushed code.
+* Chore: Add initial version of release automation and instructions (see [Doing a release](https://github.com/claremacrae/reveal-active-file-button-plugin#doing-a-release)).
+* Chore: Update dependencies.
+* Chore: Version-control `package-lock.json`.
+
 # 2.0.3
 
 * Bug fix: Fix issue where Reveal button requires two clicks ([#3](https://github.com/claremacrae/reveal-active-file-button-plugin/pull/3), thanks @alangrainger)
