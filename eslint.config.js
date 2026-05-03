@@ -30,4 +30,14 @@ export default defineConfig([
             ],
         },
     },
+    {
+        files: ["rollup.config.js"],
+        languageOptions: {
+            // Fix error:
+            //     'process' is not defined  no-undef
+            globals: {
+                process: "readonly",
+            },
+        },
+    },
 ]);
