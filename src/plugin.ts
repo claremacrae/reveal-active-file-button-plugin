@@ -2,7 +2,7 @@ import { Plugin, WorkspaceLeaf} from 'obsidian';
 import { REVEAL_ACTIVE_FILE_BUTTON_ICON } from './constants';
 
 export class RevealActiveFileButtonPlugin extends Plugin {
-  async onload(): Promise<void> {
+  onload() {
     // Initialize
     this.app.workspace.onLayoutReady(() => {
       const explorers = this.getFileExplorers();
