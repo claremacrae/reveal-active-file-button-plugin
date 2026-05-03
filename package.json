@@ -19,7 +19,7 @@
     "@types/node": "^14.14.37",
     "eslint": "^10.3.0",
     "eslint-plugin-obsidianmd": "^0.2.9",
-    "obsidian": "^0.15.9",
+    "obsidian": "0.15.9",
     "rollup": "^2.80.0",
     "tslib": "^2.2.0",
     "typescript": "^5.9.0"
