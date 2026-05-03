@@ -38,7 +38,7 @@ export class RevealActiveFileButtonPlugin extends Plugin {
     const container = explorer.view.containerEl as HTMLDivElement;
     const navContainer = container.querySelector(
       'div.nav-buttons-container'
-    ) as HTMLDivElement;
+    );
     if (!navContainer) {
       return null;
     }
