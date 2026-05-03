@@ -1,5 +1,4 @@
-import { Plugin, WorkspaceLeaf} from 'obsidian';
-import { REVEAL_ACTIVE_FILE_BUTTON_ICON } from './constants';
+import { Plugin, setIcon, WorkspaceLeaf } from 'obsidian';
 
 export class RevealActiveFileButtonPlugin extends Plugin {
   onload() {
@@ -88,7 +87,7 @@ export class RevealActiveFileButtonPlugin extends Plugin {
   private setButtonProperties(
       button: HTMLElement
   ): void {
-    button.innerHTML = REVEAL_ACTIVE_FILE_BUTTON_ICON;
+    setIcon(button, 'crosshair');
     button.setAttribute(
         'aria-label',
         'Reveal active file'
