@@ -1,6 +1,6 @@
 {
   "name": "reveal-active-file-button",
-  "version": "1.0.0",
+  "version": "2.0.4",
   "description": "Add a button to the top of the File Explorer, to reveal the active file.",
   "main": "main.js",
   "type": "module",
