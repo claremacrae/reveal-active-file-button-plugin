@@ -4,6 +4,9 @@ import tseslint from 'typescript-eslint';
 import obsidianmd from "eslint-plugin-obsidianmd";
 
 export default defineConfig([
+    {
+        ignores: ['main.js']
+    },
     tseslint.configs.recommendedTypeChecked,
     {
         languageOptions: {
