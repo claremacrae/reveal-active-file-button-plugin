@@ -58,6 +58,7 @@ See [Changelog](CHANGELOG.md).
 
 Instructions based on https://docs.obsidian.md/Plugins/Releasing/Release+your+plugin+with+GitHub+Actions
 
+1. Check that the [Verify Commit](https://github.com/claremacrae/reveal-active-file-button-plugin/actions/workflows/verify.yml) action succeeded.
 1. Makes sure you are on `main`.
 1. Set the new version number in `package.json`'s `version` variable.
 1. Set the Obsidian `minAppVersion` variable in `manifest.json`.
