@@ -11,7 +11,7 @@ export default defineConfig([
         languageOptions: {
             parserOptions: {
                 projectService: {
-                    allowDefaultProject: ['*.js'],
+                    allowDefaultProject: ['*.js', '*.mjs'],
                 },
             },
         },
@@ -31,13 +31,18 @@ export default defineConfig([
         },
     },
     {
-        files: ["rollup.config.js"],
+        files: ["rollup.config.js", "version-bump.mjs"],
         languageOptions: {
             // Fix error:
             //     'process' is not defined  no-undef
             globals: {
                 process: "readonly",
             },
+        },
+        rules: {
+            "@typescript-eslint/no-unsafe-assignment": "off",
+            "@typescript-eslint/no-unsafe-member-access": "off",
+            "@typescript-eslint/no-unsafe-argument": "off",
         },
     },
 ]);
