@@ -74,8 +74,7 @@ export class RevealActiveFileButtonPlugin extends Plugin {
     if (explorer) {
       this.revealActiveFile();
       // Send the command twice like a double-click, to handle the frequent case where Obsidian fails to jump to the file
-      // TODO Set minAppVersion 0.15.0 then use activeWindow.setTimeout()
-      setTimeout(() => {
+      activeWindow.setTimeout(() => {
         this.revealActiveFile();
       }, 50)
     }
