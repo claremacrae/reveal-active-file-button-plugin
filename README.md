@@ -9,6 +9,8 @@
     * [If scroll position isn't quite correct](#if-scroll-position-isnt-quite-correct)
     * [If you tested version 1.0.0](#if-you-tested-version-100)
   * [Changelog](#changelog)
+  * [Development](#development)
+    * [Doing a release](#doing-a-release)
   * [Related Plugins](#related-plugins)
   * [Thanks](#thanks)<!-- endToc -->
 
