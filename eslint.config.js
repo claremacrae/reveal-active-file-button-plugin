@@ -17,13 +17,8 @@ export default defineConfig([
         },
     },
     ...obsidianmd.configs.recommended,
-    // Or include English locale files (JSON and TS/JS modules)
-    // ...obsidianmd.configs.recommendedWithLocalesEn,
-
     {
         files: ["src/*.ts"],
-
-        // Optional project overrides
         rules: {
             "obsidianmd/ui/sentence-case": [
                 "warn",
