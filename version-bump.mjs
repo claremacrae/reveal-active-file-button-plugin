@@ -19,5 +19,5 @@ if (!Object.values(versions).includes(minAppVersion)) {
 }
 
 function stringify(data) {
-    return JSON.stringify(data, null, '\t');
+    return JSON.stringify(data, null, '\t') + '\n';
 }
