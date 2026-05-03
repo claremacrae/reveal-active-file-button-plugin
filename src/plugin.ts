@@ -72,8 +72,7 @@ export class RevealActiveFileButtonPlugin extends Plugin {
    */
   private onButtonClick(explorer: WorkspaceLeaf): void {
     if (explorer) {
-      // @ts-ignore
-      this.app.commands.executeCommandById('file-explorer:reveal-active-file');
+      this.revealActiveFile();
       // Send the command twice like a double-click, to handle the frequent case where Obsidian fails to jump to the file
       // TODO Set minAppVersion 0.15.0 then use activeWindow.setTimeout()
       setTimeout(() => {
@@ -81,6 +80,11 @@ export class RevealActiveFileButtonPlugin extends Plugin {
         this.app.commands.executeCommandById('file-explorer:reveal-active-file');
       }, 50)
     }
+  }
+
+  private revealActiveFile(): void {
+    // @ts-ignore
+    this.app.commands.executeCommandById('file-explorer:reveal-active-file');
   }
 
   private setButtonProperties(
