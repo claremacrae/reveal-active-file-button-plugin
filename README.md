@@ -65,15 +65,15 @@ Instructions based on https://docs.obsidian.md/Plugins/Releasing/Release+your+pl
 1. Run `npm run version`
 1. Commit and push all changes
 1. Check that the [Verify Commit](https://github.com/claremacrae/reveal-active-file-button-plugin/actions/workflows/verify.yml) action succeeded.
-1. Run the following, replacing 1.0.1 with the new version number.
+1. Run the following, replacing 2.0.4 with the new version number.
 
     ```bash
-    git tag -a 1.0.1 -m "1.0.1"
-    git push origin 1.0.1
+    git tag -a 2.0.4 -m "2.0.4"
+    git push origin 2.0.4
     ```
 
 1. Browse to the [Actions tab](https://github.com/claremacrae/reveal-active-file-button-plugin/actions). The workflow might still be running, or it might have finished already.
-1. When the workflow finishes, go back to the main page of your repository and select **Releases** in the sidebar on the right side. The workflow has created a draft GitHub release and uploaded the required assets as binary attachments.
+1. When the workflow finishes, browse to the [Releases tab](https://github.com/claremacrae/reveal-active-file-button-plugin/releases) in the sidebar on the right side. The workflow has created a draft GitHub release and uploaded the required assets as binary attachments.
 1. Select **Edit** (pencil icon) on the right side of the release name.
 1. Add release notes to let users know what happened in this release, and then select **Publish release**.
 
