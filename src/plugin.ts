@@ -80,8 +80,8 @@ export class RevealActiveFileButtonPlugin extends Plugin {
   }
 
   private revealActiveFile(): void {
-    // @ts-ignore
-    this.app.commands.executeCommandById('file-explorer:reveal-active-file');
+    (this.app as unknown as { commands: { executeCommandById: (id: string) => void } })
+        .commands.executeCommandById('file-explorer:reveal-active-file');
   }
 
   private setButtonProperties(
