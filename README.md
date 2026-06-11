@@ -74,7 +74,7 @@ Instructions based on https://docs.obsidian.md/Plugins/Releasing/Release+your+pl
     1. Select **Edit** (pencil icon) on the right side of the release name.
     1. Add release notes to let users know what happened in this release, and then select **Publish release**.
 1. Go to the [Obsidian Scanner](https://community.obsidian.md/account/plugins/reveal-active-file-button) and click **...** then "Check for new releases".
-
+1. Update the [CHANGELOG.md](CHANGELOG.md) file with the new version number and release notes (copied from the GitHub release).
 
 ## Related Plugins
 

@@ -1,3 +1,12 @@
+# 2.0.5
+
+More code and infrastructure quality improvements
+
+- Chore: Add attestation of released plugin, as wanted by the [Obsidian scorecard](https://community.obsidian.md/plugins/reveal-active-file-button)
+- Chore: Fully pass all the Obsidian ESLint code quality checks (a recommendation had changed since the last release)
+- Chore: Further streamline release process
+- Chore: Update some vulnerable dependencies
+
 # 2.0.4
 
 This is a code-quality release, to satisfy current Obsidian coding standards. **It now requires Obsidian 0.15.9 or newer.**
