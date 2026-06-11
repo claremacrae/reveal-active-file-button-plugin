@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "rollup --config rollup.config.js -w",
     "build": "rollup --config rollup.config.js --environment BUILD:production",
+    "preversion": "npm run lint",
     "version": "node version-bump.mjs && git add manifest.json versions.json",
     "lint": "eslint ."
   },
