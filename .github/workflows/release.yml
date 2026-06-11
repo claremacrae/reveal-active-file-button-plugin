@@ -26,11 +26,11 @@ jobs:
           npm install
           npm run build
 
-            - name: Attest build provenance
-              uses: actions/attest@v4
-              with:
-                  subject-path: |
-                      main.js
+      - name: Attest build provenance
+        uses: actions/attest@v4
+        with:
+            subject-path: |
+                main.js
 
       - name: Create release
         env:
