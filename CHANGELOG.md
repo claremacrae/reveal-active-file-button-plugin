@@ -1,3 +1,7 @@
+# 2.0.6
+
+- chore: Add Contributing guidelines
+
 # 2.0.5
 
 More code and infrastructure quality improvements
